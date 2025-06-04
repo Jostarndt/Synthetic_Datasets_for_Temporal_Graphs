@@ -106,8 +106,8 @@ def main():
     data_sources_list = config.datasources
     for data_sources in data_sources_list:
         datasets = [utils.get_dataset(data_source, config, train=True) for data_source in data_sources]
-        train_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(0, int(0.8 * len(ds)))) for ds in datasets])
-        validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.8 * len(ds)), len(ds))) for ds in datasets])
+        train_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(0, int(0.76 * len(ds)))) for ds in datasets])
+        validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.76 * len(ds)), int(0.88 * len(ds)))) for ds in datasets])
 
         # Training runs
         for run in range(config.num_train_runs):
@@ -132,8 +132,8 @@ def main():
 
             if 'simulation' in data_sources and len(data_sources) > 1: # Load pre-trained model
                 datasets = [utils.get_dataset(data_source, config, train=True) for data_source in [data_sources[1]]]
-                train_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(0, int(0.8 * len(ds)))) for ds in datasets])
-                validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.8 * len(ds)), len(ds))) for ds in datasets])
+                train_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(0, int(0.76 * len(ds)))) for ds in datasets])
+                validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.76 * len(ds)), int(0.88 * len(ds)))) for ds in datasets])
                 model_dir = f"{config.model_name}_{run}_" + 'simu'
                 model_path = os.path.join(model_dir, model_dir)
                 if not os.path.exists(model_path):

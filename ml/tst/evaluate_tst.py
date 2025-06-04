@@ -74,7 +74,7 @@ for data_sources, eval_data_sources in zip(data_sources_list, eval_datasources):
         print(f"Evaluating {model_dir}, number of model parameters: {total_params}")
 
         datasets = [utils.get_dataset(source, config, train=False) for source in eval_data_sources]
-        validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.8 * len(ds)), len(ds))) for ds in datasets])
+        validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.88 * len(ds)), len(ds))) for ds in datasets])
         validation_loader = DataLoader(validation_dataset, batch_size=1, shuffle=False)
 
         daily_losses_model = []

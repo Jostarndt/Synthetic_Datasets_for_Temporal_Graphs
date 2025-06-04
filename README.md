@@ -1,7 +1,9 @@
-# Temporal Waves on Graphs
+# Synthetic Datasets for Machine Learning on Spatio-Temporal Graphs using PDEs
 ![SI-diffusion](imgs/Graph-image-2.png)
 ### Reference
-Paper not published yet.
+Paper accepted at DMLR: [openreview.net/forum?id=EguDBMechn](https://openreview.net/forum?id=EguDBMechn)
+
+Bibtext: tbd
 
 ## Datasets Access and Usage
 

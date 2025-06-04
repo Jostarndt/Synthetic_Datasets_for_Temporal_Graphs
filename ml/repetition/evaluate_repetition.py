@@ -26,7 +26,7 @@ logged_loss_train = []
 # Training loop
 for eval_data_sources in eval_datasources:
     datasets = [utils.get_dataset(source, config, train=False) for source in eval_data_sources]
-    validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.8 * len(ds)), len(ds))) for ds in datasets])
+    validation_dataset = ConcatDataset([torch.utils.data.Subset(ds, range(int(0.88 * len(ds)), len(ds))) for ds in datasets])
     validation_loader = DataLoader(validation_dataset, batch_size=1, shuffle=False)
     eval_data_sources_str = '_'.join([ds[:4] for ds in eval_data_sources])
     model_dir = f"{config.model_name}_" + eval_data_sources_str
