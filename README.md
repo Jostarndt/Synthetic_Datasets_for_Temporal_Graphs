@@ -1,9 +1,24 @@
 # Synthetic Datasets for Machine Learning on Spatio-Temporal Graphs using PDEs
 ![SI-diffusion](imgs/Graph-image-2.png)
 ### Reference
-Paper accepted at DMLR: [openreview.net/forum?id=EguDBMechn](https://openreview.net/forum?id=EguDBMechn)
 
-Bibtext: tbd
+GitHub repository of the DMLR paper: [openreview.net/forum?id=EguDBMechn](https://openreview.net/forum?id=EguDBMechn)
+
+Bibtext citation: 
+
+```
+@article{
+arndt2025synthetic,
+title={Synthetic Datasets for Machine Learning on Spatio-Temporal Graphs using {PDE}s},
+author={Jost Arndt and Utku Isil and Michael Detzel and Wojciech Samek and Jackie Ma},
+journal={Journal of Data-centric Machine Learning Research},
+issn={XXXX-XXXX},
+year={2025},
+url={https://openreview.net/forum?id=EguDBMechn},
+note={}
+}
+```
+
 
 ## Datasets Access and Usage
 
