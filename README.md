@@ -25,7 +25,7 @@ note={}
 |Name | Nodes | Edges| Time-steps |
 | --- | --- | --- | ---|
 |[SI-diffusion Equation](/data/SI_diffusion_equation) | 400 | 2088 | 9100 |
-|[Wave Equation](/data/wave_equation) | 325 | 1858 | 960 | 
+|[Wave Equation](/data/wave_equation) | 325 | 1858 | 1728 | 
 |[Advection-Diffusion Equation](/data/advection_difusion_equation) | 400 | 2088 | 4320 |  
 
 
