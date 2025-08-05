@@ -22,6 +22,10 @@ note={}
 
 ## Datasets Access and Usage
 
+**Also hosted in PyTorch Geometric Temporal:**  
+The datasets are also included in the [PyTorch Geometric Temporal repository](https://github.com/benedekrozemberczki/pytorch_geometric_temporal), where they can be used with the library's built-in dataset classes and models.
+
+
 |Name | Nodes | Edges| Time-steps |
 | --- | --- | --- | ---|
 |[SI-diffusion Equation](/data/SI_diffusion_equation) | 400 | 2088 | 9100 |
